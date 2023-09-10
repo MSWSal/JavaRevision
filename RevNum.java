@@ -6,17 +6,25 @@ public class RevNum {
         System.out.println("Enter :");
         int num = sc.nextInt();
 
-        //starts
-        int reverse = 0;
+        //Algo method
+//        int reverse = 0;
+//
+//        while (num != 0){
+//            reverse *= 10;
+//            reverse += num%10;
+//            num /=10;
+//        }
+//
+//        System.out.println("Reverse is using algo :"+reverse);
 
-        while (num != 0){
-            reverse *= 10;
-            reverse += num%10;
-            num /=10;
-        }
 
-        System.out.println("Reverse is using algo :"+reverse);
+        //string buffer method
+        StringBuffer rev;
+        StringBuffer number = new StringBuffer(String.valueOf(num));
 
+        rev = number.reverse();
+
+        System.out.println("Reverse is using buffer :"+rev);
 
 
     }
