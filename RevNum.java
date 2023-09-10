@@ -19,12 +19,18 @@ public class RevNum {
 
 
         //string buffer method
-        StringBuffer rev;
-        StringBuffer number = new StringBuffer(String.valueOf(num));
+//        StringBuffer rev;
+//        StringBuffer number = new StringBuffer(String.valueOf(num));
+//
+//        rev = number.reverse();
+//
+//        System.out.println("Reverse is using buffer :"+rev);
 
-        rev = number.reverse();
+        //Stringbuilder class
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(num);
 
-        System.out.println("Reverse is using buffer :"+rev);
+        System.out.println(stringBuilder.reverse());
 
 
     }
