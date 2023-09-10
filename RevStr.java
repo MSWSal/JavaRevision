@@ -2,7 +2,7 @@ public class RevStr {
     public static void main(String[] args) {
         String str = "Hello";
         String rev ="";
-        //concatanation
+        //=========================concatanation
 //
 //
 //
@@ -10,17 +10,26 @@ public class RevStr {
 //            rev = rev + str.charAt(i);
 //        }
 
-        //char[]
+        //====================char[]
 //        char rev[]= new char[0];
-        char arr[]= str.toCharArray();
+//        char arr[]= str.toCharArray();
+//
+//
+//        for (int i=arr.length-1;i>=0;i--){
+//            rev+= arr[i];
+//
+//        }
+//
+//
+//        System.out.println(rev);
+
+        //=================strbuffer
+        StringBuffer strbf = new StringBuffer();
+        strbf.append(str);
 
 
-        for (int i=arr.length-1;i>=0;i--){
-            rev+= arr[i];
-
-        }
+        System.out.println(strbf.reverse());
 
 
-        System.out.println(rev);
     }
 }
