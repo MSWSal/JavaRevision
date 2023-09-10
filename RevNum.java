@@ -15,7 +15,9 @@ public class RevNum {
             num /=10;
         }
 
-        System.out.println("Reverse is :"+reverse);
+        System.out.println("Reverse is using algo :"+reverse);
+
+
 
     }
 
