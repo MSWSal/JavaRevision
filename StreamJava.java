@@ -9,5 +9,11 @@ public class StreamJava {
         List<Integer> even = numarray.stream()
                 .filter(x -> x % 2==0)
                 .collect(Collectors.toList());
+
+        List<Integer> sq = even.stream()
+                .map(x -> x=x * x)
+                .collect(Collectors.toList());
+
+        System.out.println(sq);
     }
 }
